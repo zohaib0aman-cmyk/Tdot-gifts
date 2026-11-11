@@ -4,7 +4,7 @@ import { Reveal } from "@/components/motion";
 import { ProductImage } from "@/components/product-image";
 import { ButtonLink, Container } from "@/components/ui";
 
-export const metadata: Metadata = { title: "Our Story", description: "Gifts & Surprises USA is a team of surprise planners delivering luxury gifts and unforgettable moments across the USA." };
+export const metadata: Metadata = { title: "Our Story", description: "Tdot Gifts is a team of surprise planners delivering luxury gifts and unforgettable moments across the USA." };
 
 export default function AboutPage() {
   const values = [
@@ -20,7 +20,7 @@ export default function AboutPage() {
           <div>
             <p className="text-[0.72rem] font-bold uppercase tracking-[0.28em] text-gold-ink">Our story</p>
             <h1 className="mt-3 text-5xl leading-[1.02] sm:text-7xl">Small team. <em className="gold-text">Big feelings.</em></h1>
-            <p className="mt-6 text-lg leading-relaxed text-muted">Gifts &amp; Surprises USA started with a simple problem: how do you make someone you love feel celebrated when you can&apos;t be there? We began by planning birthday surprises for friends and family living far from home — today we&apos;re a team of florists, bakers and surprise planners delivering joy across the country.</p>
+            <p className="mt-6 text-lg leading-relaxed text-muted">Tdot Gifts started with a simple problem: how do you make someone you love feel celebrated when you can&apos;t be there? We began by planning birthday surprises for friends and family living far from home — today we&apos;re a team of florists, bakers and surprise planners delivering joy across the country.</p>
             <div className="mt-8 flex flex-wrap gap-3"><ButtonLink href="/shop">Shop gifts</ButtonLink><ButtonLink href="/contact" variant="outline">Plan a custom surprise</ButtonLink></div>
           </div>
           <div className="relative grid grid-cols-2 gap-4">
@@ -45,7 +45,7 @@ export default function AboutPage() {
       </section>
       <Container className="py-16 text-center sm:py-24">
         <p className="mx-auto max-w-3xl font-display text-3xl italic leading-snug sm:text-4xl">“We don&apos;t just deliver gifts. We deliver the moment someone realizes how loved they are.”</p>
-        <p className="mt-6 text-sm font-semibold uppercase tracking-[0.2em] text-gold-ink">— The Gifts &amp; Surprises team</p>
+        <p className="mt-6 text-sm font-semibold uppercase tracking-[0.2em] text-gold-ink">— The Tdot Gifts team</p>
       </Container>
     </>
   );

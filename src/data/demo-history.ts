@@ -108,6 +108,6 @@ export const DEMO_PROMOS: PromoCode[] = [
 ];
 
 export const DEMO_GIFT_CARDS: GiftCard[] = [
-  { id: "gc_1", code: "GIFT-DEMO-5000", initialBalance: 50, balance: 50, recipientName: "Demo Recipient", recipientEmail: "demo@example.com", senderName: "Gifts & Surprises", active: true, createdAt: new Date(NOW - 10 * DAY).toISOString() },
+  { id: "gc_1", code: "GIFT-DEMO-5000", initialBalance: 50, balance: 50, recipientName: "Demo Recipient", recipientEmail: "demo@example.com", senderName: "Tdot Gifts", active: true, createdAt: new Date(NOW - 10 * DAY).toISOString() },
   { id: "gc_2", code: "GIFT-LOVE-2500", initialBalance: 100, balance: 25, recipientName: "Ayesha Khan", recipientEmail: "ayesha.khan@example.com", senderName: "Omar", active: true, createdAt: new Date(NOW - 30 * DAY).toISOString() },
 ];

@@ -3,7 +3,7 @@ import { PackageSearch } from "lucide-react";
 import { TrackForm } from "@/components/track-form";
 import { Container } from "@/components/ui";
 
-export const metadata: Metadata = { title: "Track Your Order", description: "Track your Gifts & Surprises USA order with your order number and email." };
+export const metadata: Metadata = { title: "Track Your Order", description: "Track your Tdot Gifts order with your order number and email." };
 
 export default function TrackPage() {
   return (

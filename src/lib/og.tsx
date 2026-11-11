@@ -17,8 +17,8 @@ export async function brandedOg({ eyebrow, title, subtitle, price }: { eyebrow: 
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={logoSrc} width={96} height={96} style={{ borderRadius: 999 }} alt="" />
             <div style={{ display: "flex", flexDirection: "column" }}>
-              <div style={{ fontSize: 34, letterSpacing: 4 }}>GIFTS & SURPRISES</div>
-              <div style={{ fontSize: 18, letterSpacing: 12, color: "#c9a14a" }}>USA</div>
+              <div style={{ fontSize: 34, letterSpacing: 4 }}>TDOT GIFTS</div>
+              <div style={{ fontSize: 18, letterSpacing: 12, color: "#c9a14a" }}>SINCE 2024</div>
             </div>
           </div>
           <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>

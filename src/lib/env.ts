@@ -13,8 +13,8 @@ export const env = {
   paypalSecret: process.env.PAYPAL_CLIENT_SECRET || "",
   paypalApi: process.env.PAYPAL_API_BASE || "https://api-m.sandbox.paypal.com",
   resendKey: process.env.RESEND_API_KEY || "",
-  emailFrom: process.env.EMAIL_FROM || "Gifts & Surprises USA <orders@giftsandsurprises.us>",
-  adminEmail: (process.env.ADMIN_EMAIL || "admin@giftsandsurprises.us").toLowerCase(),
+  emailFrom: process.env.EMAIL_FROM || "Tdot Gifts <orders@tdotgifts.com>",
+  adminEmail: (process.env.ADMIN_EMAIL || "admin@tdotgifts.com").toLowerCase(),
   adminPassword: process.env.ADMIN_PASSWORD || "Surprise2026!",
   sessionSecret: process.env.SESSION_SECRET || "dev-only-insecure-secret-change-me-please-0123456789",
 };

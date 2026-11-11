@@ -1,4 +1,4 @@
--- Gifts & Surprises USA — Supabase schema
+-- Tdot Gifts — Supabase schema
 -- Run once in the Supabase SQL editor (Project → SQL → New query).
 -- The app seeds this table automatically on first request (24 products, reviews, demo orders, settings).
 

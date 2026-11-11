@@ -110,7 +110,7 @@ function WalletSheet({ kind, total, onAuthorize, onCancel }: { kind: "apple_pay"
           <span className="rounded-full bg-amber-500/15 px-2.5 py-1 text-[0.65rem] font-bold uppercase tracking-wider text-amber-700 dark:text-amber-400">Test mode</span>
         </div>
         <div className="mt-5 space-y-3 rounded-2xl bg-surface-2 p-4 text-sm">
-          <div className="flex justify-between"><span className="text-muted">Pay</span><strong>Gifts &amp; Surprises USA</strong></div>
+          <div className="flex justify-between"><span className="text-muted">Pay</span><strong>Tdot Gifts</strong></div>
           <div className="flex justify-between"><span className="text-muted">Method</span><span>{kind === "paypal" ? "PayPal balance (sandbox)" : "Visa •••• 4242"}</span></div>
           <div className="flex justify-between border-t border-line pt-3"><span className="font-semibold">Total</span><strong className="font-display text-xl">{money(total)}</strong></div>
         </div>

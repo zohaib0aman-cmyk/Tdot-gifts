@@ -12,7 +12,7 @@ export default async function ContactPage() {
   const items = [
     { icon: Mail, label: "Email", value: s.contact.email, href: `mailto:${s.contact.email}` },
     { icon: Phone, label: "Phone & WhatsApp", value: s.contact.phone, href: `tel:${s.contact.phone.replace(/[^\d+]/g, "")}` },
-    { icon: InstagramGlyph, label: "Instagram DM", value: "@gifts.surprises.usa", href: s.social.instagram },
+    { icon: InstagramGlyph, label: "Instagram DM", value: "@tdot_gifts", href: s.social.instagram },
     { icon: Clock, label: "Hours", value: s.contact.hours },
     { icon: MapPin, label: "Coverage", value: s.contact.serviceArea },
   ];

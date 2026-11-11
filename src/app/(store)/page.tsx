@@ -1,5 +1,6 @@
 import { Hero } from "@/components/home/hero";
 import { GiftFinderQuiz, Newsletter } from "@/components/home/sections";
+import { DeliveryReels, type Reel } from "@/components/home/reels";
 import { HowItWorks, InstagramFeed, OccasionGrid, ProductSection, RecipientRail, ReviewsSection } from "@/components/home/static-sections";
 import { getSettings, listProducts, listReviews, slimProduct } from "@/lib/db";
 import type { HomeSectionKey } from "@/lib/types";
@@ -11,7 +12,15 @@ export default async function HomePage() {
   const fresh = [...products].sort((a, b) => b.createdAt.localeCompare(a.createdAt)).slice(0, 4);
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 
+  const reels: Reel[] = [
+    { src: "/videos/surrey-balloon-setup.mp4", poster: "/videos/surrey-balloon-setup.webp", caption: "Their birthday, your love, our little magic", place: "Surrey", href: "/product/balloon-arch-birthday-setup", product: "Balloon Arch Setup" },
+    { src: "/videos/hbd-my-love-box.mp4", poster: "/videos/hbd-my-love-box.webp", caption: "Surprising him is your love language", href: "/product/hbd-my-love-surprise-box", product: "HBD My Love Box" },
+    { src: "/videos/abbotsford-cake-box.mp4", poster: "/videos/abbotsford-cake-box.webp", caption: "Cake, balloons & fairy lights", place: "Abbotsford", href: "/product/balloon-cake-surprise-box", product: "Balloon & Cake Box" },
+    { src: "/videos/sorry-hamper.mp4", poster: "/videos/sorry-hamper.webp", caption: "Because a simple sorry wasn't enough", href: "/product/im-sorry-treat-hamper", product: "I'm Sorry Hamper" },
+  ];
+
   const render: Record<HomeSectionKey, React.ReactNode> = {
+    reels: <DeliveryReels reels={reels} />,
     occasions: <OccasionGrid />,
     recipients: <RecipientRail />,
     bestsellers: <ProductSection id="best-h" eyebrow="Most loved" title={<>Best <em className="gold-text">sellers</em></>} sub="The gifts our customers send again and again." products={best} href="/shop?sort=popular" />,

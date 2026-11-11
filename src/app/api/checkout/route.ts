@@ -83,7 +83,7 @@ export const POST = route(async (req) => {
       currency: "usd",
       automatic_payment_methods: { enabled: true }, // card, Apple Pay, Google Pay, Link…
       receipt_email: order.email,
-      description: `${order.number} — Gifts & Surprises USA`,
+      description: `${order.number} — Tdot Gifts`,
       metadata: { orderId: order.id, orderNumber: order.number },
     });
     await saveOrder({ ...order, paymentIntentId: pi.id });

@@ -2,8 +2,8 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Gifts & Surprises USA",
-    short_name: "Gifts & Surprises",
+    name: "Tdot Gifts",
+    short_name: "Tdot Gifts",
     description: "Luxury gifts & birthday surprises delivered across the USA.",
     start_url: "/",
     display: "standalone",

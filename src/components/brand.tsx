@@ -5,11 +5,11 @@ export function Wordmark({ className, compact }: { className?: string; compact?:
   return (
     <span className={cn("inline-flex flex-col leading-none", className)}>
       <span className="font-display text-[1.06rem] font-bold uppercase tracking-[0.08em] sm:text-[1.2rem]">
-        Gifts <span className="font-script text-[1.35em] font-normal normal-case text-gold-ink">&amp;</span> Surprises
+        Tdot <span className="font-script text-[1.35em] font-normal normal-case text-gold-ink">Gifts</span>
       </span>
       {!compact && (
-        <span className="mt-0.5 flex items-center gap-2 text-[0.58rem] font-bold uppercase tracking-[0.5em] text-gold-ink">
-          <span className="h-px w-4 bg-gold" aria-hidden /> USA <span className="h-px w-4 bg-gold" aria-hidden />
+        <span className="mt-0.5 flex items-center gap-2 text-[0.58rem] font-bold uppercase tracking-[0.32em] text-gold-ink">
+          <span className="h-px w-4 bg-gold" aria-hidden /> Since 2024 <span className="h-px w-4 bg-gold" aria-hidden />
         </span>
       )}
     </span>
@@ -29,7 +29,7 @@ export function Logo({ logoUrl, mode, className }: { logoUrl: string; mode: "bad
     <span className={cn("inline-flex items-center gap-2.5", className)}>
       {mode !== "wordmark" && <LogoBadge src={logoUrl} size={mode === "badge" ? 52 : 42} priority />}
       {mode !== "badge" && <Wordmark />}
-      <span className="sr-only">Gifts &amp; Surprises USA — home</span>
+      <span className="sr-only">Tdot Gifts — home</span>
     </span>
   );
 }

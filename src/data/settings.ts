@@ -21,7 +21,7 @@ export const DEFAULT_TAX_RATES: Record<string, number> = {
 
 const POLICIES = {
   privacy: `## Our promise
-Gifts & Surprises USA ("we", "us") respects your privacy. This policy explains what we collect, why, and the choices you have.
+Tdot Gifts ("we", "us") respects your privacy. This policy explains what we collect, why, and the choices you have.
 
 ## What we collect
 - **Order details** — your name, email, phone, the recipient's name and delivery address, and your gift message.
@@ -41,12 +41,12 @@ We share only what's needed with trusted partners — payment processors, delive
 Essential cookies keep your cart, wishlist and session working. Optional analytics cookies are only set if you accept them in our cookie banner.
 
 ## Your rights
-You may request access, correction or deletion of your data by emailing hello@giftsandsurprises.us. California residents have additional rights under the CCPA/CPRA, which we honor.
+You may request access, correction or deletion of your data by emailing hello@tdotgifts.com. California residents have additional rights under the CCPA/CPRA, which we honor.
 
 ## Contact
-Questions? Email hello@giftsandsurprises.us.`,
+Questions? Email hello@tdotgifts.com.`,
   terms: `## Agreement
-By using giftsandsurprises.us and placing an order you agree to these terms.
+By using tdotgifts.com and placing an order you agree to these terms.
 
 ## Orders & pricing
 All prices are in US dollars. We reserve the right to cancel orders affected by pricing errors or suspected fraud; you'll receive a full refund if this happens.
@@ -109,7 +109,7 @@ Ordering from outside the USA? No problem — we accept international cards and 
 };
 
 export const DEFAULT_SETTINGS: SiteSettings = {
-  storeName: "Gifts & Surprises USA",
+  storeName: "Tdot Gifts",
   tagline: "Luxury gifts & birthday surprises, delivered across the USA",
   logoUrl: "/brand/logo-badge.png",
   logoMode: "badge+wordmark",
@@ -136,6 +136,7 @@ export const DEFAULT_SETTINGS: SiteSettings = {
   homeSections: [
     { key: "occasions", label: "Shop by occasion", visible: true },
     { key: "bestsellers", label: "Best sellers", visible: true },
+    { key: "reels", label: "Delivery videos", visible: true },
     { key: "recipients", label: "Shop by recipient", visible: true },
     { key: "story", label: "How surprises work", visible: true },
     { key: "newArrivals", label: "New arrivals", visible: true },
@@ -165,14 +166,14 @@ export const DEFAULT_SETTINGS: SiteSettings = {
     ] },
   ],
   social: {
-    instagram: "https://www.instagram.com/gifts.surprises.usa/",
+    instagram: "https://www.instagram.com/tdot_gifts/",
     facebook: "https://www.facebook.com/",
     tiktok: "https://www.tiktok.com/",
     pinterest: "https://www.pinterest.com/",
     whatsapp: "",
   },
   contact: {
-    email: "hello@giftsandsurprises.us",
+    email: "hello@tdotgifts.com",
     phone: "(214) 555-0147",
     hours: "Mon–Sun · 8am–9pm CT",
     serviceArea: "Hand delivery in 40+ US metros · Shipping to all 50 states",
@@ -190,7 +191,7 @@ export const DEFAULT_SETTINGS: SiteSettings = {
   emailTemplates: {
     orderConfirmation: { subject: "Your surprise is on its way to being perfect 🎁 (Order {{orderNumber}})", intro: "Thank you, {{firstName}}! We've received your order and our team is already preparing something beautiful." },
     shipped: { subject: "Your gift has shipped! (Order {{orderNumber}})", intro: "Great news, {{firstName}} — your order is on its way. Track it any time with the link below." },
-    giftCard: { subject: "{{senderName}} sent you a Gifts & Surprises gift card 🎁", intro: "Someone special is thinking of you. Use the code below at checkout — it never expires." },
+    giftCard: { subject: "{{senderName}} sent you a Tdot Gifts gift card 🎁", intro: "Someone special is thinking of you. Use the code below at checkout — it never expires." },
   },
   policies: POLICIES,
 };

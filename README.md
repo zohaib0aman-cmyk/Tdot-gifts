@@ -1,6 +1,6 @@
-# Gifts & Surprises USA — storefront + admin
+# Tdot Gifts — storefront + admin
 
-A premium e-commerce site for **Gifts & Surprises USA** ([@gifts.surprises.usa](https://www.instagram.com/gifts.surprises.usa/)): rose hatboxes, gift boxes, cakes, teddy bears and full surprise setups, delivered across the USA and orderable from anywhere in the world.
+A premium e-commerce site for **Tdot Gifts** ([@tdot_gifts](https://www.instagram.com/tdot_gifts/)): rose hatboxes, gift boxes, cakes, teddy bears and full surprise setups, delivered across the USA and orderable from anywhere in the world.
 
 **Stack:** Next.js 16 (App Router) · TypeScript · Tailwind CSS v4 · Framer Motion · Lucide · Supabase (Postgres, Auth, Storage) · Stripe (test mode) · PayPal sandbox · Resend.
 
@@ -29,7 +29,7 @@ With **no environment variables** the app runs in **demo mode**:
 
 `/admin` — protected by a signed, HTTP-only session cookie (checked in `src/proxy.ts` **and** on every admin API route).
 
-Demo credentials (only when `ADMIN_PASSWORD` is not set): `admin@giftsandsurprises.us` / `Surprise2026!`
+Demo credentials (only when `ADMIN_PASSWORD` is not set): `admin@tdotgifts.com` / `Surprise2026!`
 
 ---
 

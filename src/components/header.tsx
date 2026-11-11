@@ -189,7 +189,7 @@ export function MobileMenu() {
                 <ThemeToggle />
               </div>
               <a href={settings.social.instagram} target="_blank" rel="noreferrer" className="mt-4 flex min-h-12 items-center gap-3 rounded-2xl border border-line px-4 text-sm font-medium">
-                <InstagramGlyph className="h-5 w-5" /> @gifts.surprises.usa
+                <InstagramGlyph className="h-5 w-5" /> @tdot_gifts
               </a>
             </div>
           </m.nav>

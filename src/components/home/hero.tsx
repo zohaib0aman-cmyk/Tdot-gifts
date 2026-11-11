@@ -100,10 +100,10 @@ function GiftBox() {
 
       {/* floating keepsakes */}
       <div className="anim-float absolute -left-2 top-[10%] w-[30%] sm:-left-6">
-        <div className="relative aspect-[4/5] rotate-[-8deg] overflow-hidden rounded-2xl border-4 border-surface shadow-lift"><ProductImage src="/photos/cake-19.webp" alt="" fill sizes="140px" priority /></div>
+        <div className="relative aspect-[4/5] rotate-[-8deg] overflow-hidden rounded-2xl border-4 border-surface shadow-lift"><ProductImage src="/photos/tdot-ribbon-bouquet.webp" alt="" fill sizes="140px" priority /></div>
       </div>
       <div className="anim-float-slow absolute -right-1 bottom-[12%] w-[28%] sm:-right-4">
-        <div className="relative aspect-[4/5] rotate-[7deg] overflow-hidden rounded-2xl border-4 border-surface shadow-lift"><ProductImage src="/photos/teddy-15.webp" alt="" fill sizes="130px" priority /></div>
+        <div className="relative aspect-[4/5] rotate-[7deg] overflow-hidden rounded-2xl border-4 border-surface shadow-lift"><ProductImage src="/photos/tdot-ferrero.webp" alt="" fill sizes="130px" priority /></div>
       </div>
       <div key={run} className="fade-rise absolute right-[6%] top-[4%] flex items-center gap-2 rounded-full border border-line bg-surface/90 px-3 py-2 text-xs font-semibold shadow-soft backdrop-blur" style={{ "--d": "2.4s" } as React.CSSProperties}>
         <Sparkles size={14} className="text-gold-ink" /> Surprise unlocked!

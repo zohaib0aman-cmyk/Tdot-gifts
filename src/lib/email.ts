@@ -11,7 +11,7 @@ function shell(title: string, body: string, storeName: string) {
   return `<!doctype html><html><body style="margin:0;background:#f6efe6;font-family:Helvetica,Arial,sans-serif;color:#1d1416">
 <table width="100%" cellpadding="0" cellspacing="0" style="padding:32px 12px"><tr><td align="center">
 <table width="600" cellpadding="0" cellspacing="0" style="max-width:600px;background:#ffffff;border-radius:24px;overflow:hidden">
-<tr><td style="background:#16110f;padding:28px;text-align:center;color:#f6efe6;font-family:Georgia,serif;font-size:22px;letter-spacing:3px">GIFTS <span style="color:#c9a14a">&amp;</span> SURPRISES<div style="font-size:11px;letter-spacing:8px;color:#c9a14a;margin-top:6px">USA</div></td></tr>
+<tr><td style="background:#16110f;padding:28px;text-align:center;color:#f6efe6;font-family:Georgia,serif;font-size:22px;letter-spacing:3px">TDOT <span style="color:#c9a14a">GIFTS</span><div style="font-size:11px;letter-spacing:6px;color:#c9a14a;margin-top:6px">SINCE 2024</div></td></tr>
 <tr><td style="padding:32px 32px 8px"><h1 style="font-family:Georgia,serif;font-weight:normal;font-size:26px;margin:0 0 12px">${esc(title)}</h1>${body}</td></tr>
 <tr><td style="padding:24px 32px 32px;color:#8a7a75;font-size:12px;text-align:center">${esc(storeName)} · Delivering surprises across the USA<br/>Questions? Just reply to this email.</td></tr>
 </table></td></tr></table></body></html>`;

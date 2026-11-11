@@ -80,7 +80,15 @@ export default async function ProductPage({ params }: PageProps<"/product/[slug]
           </ol>
         </nav>
         <div className="grid gap-8 lg:grid-cols-2 lg:gap-14 [&>*]:min-w-0">
-          <Gallery images={p.images} name={p.name} />
+          <div className="space-y-5">
+            <Gallery images={p.images} name={p.name} />
+            {p.video && (
+              <figure className="overflow-hidden rounded-[2rem] border border-line bg-surface p-3 shadow-soft">
+                <video src={p.video} poster={p.video.replace(/\.mp4$/, ".webp")} controls muted playsInline loop preload="none" className="mx-auto aspect-[9/16] max-h-[70vh] w-auto rounded-[1.5rem] bg-black object-cover" aria-label={`Video of a real ${p.name} delivery`} />
+                <figcaption className="px-2 pb-1 pt-3 text-center text-sm text-muted">🎥 A real delivery, filmed by our team</figcaption>
+              </figure>
+            )}
+          </div>
           <PurchasePanel product={p} categoryName={category?.name ?? ""} />
         </div>
         <ReviewsBlock productId={p.id} reviews={reviews} />

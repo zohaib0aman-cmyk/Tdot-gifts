@@ -177,12 +177,12 @@ export function ReviewsSection({ reviews, products }: { reviews: Review[]; produ
 /* ------------------------------------------------------------ instagram */
 export function InstagramFeed({ instagram }: { instagram: string }) {
   const social = { instagram };
-  const posts = ["p15", "p03", "p12", "p17", "p19", "p16"].map((n) => `/photos/${n}.webp`);
-  const captions = ["Roses, teddy & a name cake for Hayati", "Rose-swirl cupcakes with gold leaf", "A hundred red roses, hand-tied", "Glitter rose heart box & treats", "Pearl & rose birthday cake", "A handwritten note in every basket"];
+  const posts = ["tdot-ribbon-car", "tdot-ferrero", "tdot-cake-box-close", "tdot-hbd-box-open", "tdot-sorry-hamper", "tdot-balloon-setup"].map((n) => `/photos/${n}.webp`);
+  const captions = ["Happy Birthday sash bouquet", "Roses & Ferrero Rocher", "Delivered in Abbotsford", "Surprising him is your love language", "Because a simple sorry wasn't enough", "Their birthday, our little magic — Surrey"];
   return (
     <section className="py-16 sm:py-24" aria-labelledby="ig-h">
       <Container>
-        <SectionHeading eyebrow="@gifts.surprises.usa" title={<span id="ig-h">Real surprises, <em className="gold-text">real smiles</em></span>} sub="Straight from our Instagram — tag us in your moments for a chance to be featured." action={<a href={social.instagram} target="_blank" rel="noreferrer" className={buttonClass("primary", "sm")}><InstagramGlyph className="h-4 w-4" /> Follow us</a>} />
+        <SectionHeading eyebrow="@tdot_gifts" title={<span id="ig-h">Real surprises, <em className="gold-text">real smiles</em></span>} sub="Straight from our Instagram — tag us in your moments for a chance to be featured." action={<a href={social.instagram} target="_blank" rel="noreferrer" className={buttonClass("primary", "sm")}><InstagramGlyph className="h-4 w-4" /> Follow us</a>} />
         <Stagger className="grid grid-cols-3 gap-1.5 sm:gap-3 lg:grid-cols-6">
           {posts.map((src, i) => (
             <StaggerItem key={src}>

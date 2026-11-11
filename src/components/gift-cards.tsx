@@ -17,8 +17,8 @@ function CardPreview({ amount, to, from, message }: { amount: number; to: string
         <m.div className="absolute inset-0 bg-[linear-gradient(115deg,transparent_30%,rgba(255,255,255,.18)_45%,transparent_60%)]" animate={{ x: ["-100%", "120%"] }} transition={{ duration: 3.5, repeat: Infinity, repeatDelay: 1.5 }} />
         <div className="relative flex h-full flex-col justify-between">
           <div>
-            <p className="font-display text-lg font-bold tracking-[0.12em]">GIFTS <span className="font-script text-2xl font-normal text-[#e9cf7f]">&amp;</span> SURPRISES</p>
-            <p className="text-[0.6rem] font-bold tracking-[0.5em] text-[#c9a14a]">USA · GIFT CARD</p>
+            <p className="font-display text-lg font-bold tracking-[0.12em]">TDOT <span className="font-script text-2xl font-normal text-[#e9cf7f]">Gifts</span></p>
+            <p className="text-[0.6rem] font-bold tracking-[0.5em] text-[#c9a14a]">SINCE 2024 · GIFT CARD</p>
           </div>
           <div className="flex items-end justify-between gap-4">
             <div className="min-w-0">

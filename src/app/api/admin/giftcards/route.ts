@@ -6,7 +6,7 @@ import { sendGiftCardEmail } from "@/lib/email";
 
 export const POST = route(async (req) => {
   const d = await body(req, z.object({ amount: z.number().min(1).max(5000), recipientName: z.string().trim().max(80).optional(), recipientEmail: z.email().optional().or(z.literal("")), message: z.string().max(300).optional(), send: z.boolean().optional() }));
-  const card = { id: newId("gc"), code: generateGiftCode(), initialBalance: d.amount, balance: d.amount, recipientName: d.recipientName || undefined, recipientEmail: d.recipientEmail || undefined, senderName: "Gifts & Surprises USA", message: d.message, active: true, createdAt: new Date().toISOString() };
+  const card = { id: newId("gc"), code: generateGiftCode(), initialBalance: d.amount, balance: d.amount, recipientName: d.recipientName || undefined, recipientEmail: d.recipientEmail || undefined, senderName: "Tdot Gifts", message: d.message, active: true, createdAt: new Date().toISOString() };
   await saveGiftCard(card);
   if (d.send && card.recipientEmail) await sendGiftCardEmail(card);
   return { card };

@@ -38,6 +38,8 @@ export interface Product {
   price: number; // base price (USD)
   compareAtPrice?: number;
   images: string[];
+  /** Optional vertical delivery video (mp4) shown on the product page */
+  video?: string;
   category: string; // category slug
   occasions: string[];
   recipients: string[];
@@ -238,6 +240,7 @@ export type HomeSectionKey =
   | "story"
   | "newArrivals"
   | "quiz"
+  | "reels"
   | "reviews"
   | "instagram"
   | "newsletter";

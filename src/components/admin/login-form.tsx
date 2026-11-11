@@ -29,12 +29,12 @@ export function AdminLoginForm({ next, demo }: { next: string; demo: boolean }) 
           <p className="mt-1 text-sm text-muted">Sign in to manage orders, products and your storefront.</p>
         </div>
         <form onSubmit={submit} className="mt-7 space-y-4">
-          <Field label="Email" htmlFor="ad-email"><Input id="ad-email" name="email" type="email" required autoComplete="username" defaultValue={demo ? "admin@giftsandsurprises.us" : ""} /></Field>
+          <Field label="Email" htmlFor="ad-email"><Input id="ad-email" name="email" type="email" required autoComplete="username" defaultValue={demo ? "admin@tdotgifts.com" : ""} /></Field>
           <Field label="Password" htmlFor="ad-pw"><Input id="ad-pw" name="password" type="password" required autoComplete="current-password" /></Field>
           {err && <m.p role="alert" animate={{ x: [0, -8, 8, -4, 0] }} className="text-sm text-rose">{err}</m.p>}
           <Button type="submit" size="lg" className="w-full" loading={busy}><Lock size={16} /> Sign in</Button>
         </form>
-        {demo && <p className="mt-5 rounded-2xl bg-amber-500/10 p-3 text-center text-xs text-amber-800 dark:text-amber-300">Demo credentials: <strong>admin@giftsandsurprises.us</strong> / <strong>Surprise2026!</strong><br />Set ADMIN_EMAIL and ADMIN_PASSWORD to change them.</p>}
+        {demo && <p className="mt-5 rounded-2xl bg-amber-500/10 p-3 text-center text-xs text-amber-800 dark:text-amber-300">Demo credentials: <strong>admin@tdotgifts.com</strong> / <strong>Surprise2026!</strong><br />Set ADMIN_EMAIL and ADMIN_PASSWORD to change them.</p>}
       </m.div>
     </main>
   );

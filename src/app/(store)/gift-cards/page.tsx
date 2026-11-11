@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { BalanceChecker, GiftCardBuilder } from "@/components/gift-cards";
 import { Container } from "@/components/ui";
 
-export const metadata: Metadata = { title: "Digital Gift Cards", description: "Send a Gifts & Surprises USA digital gift card instantly by email. Any amount from $10 to $1,000 — never expires." };
+export const metadata: Metadata = { title: "Digital Gift Cards", description: "Send a Tdot Gifts digital gift card instantly by email. Any amount from $10 to $1,000 — never expires." };
 
 export default function GiftCardsPage() {
   return (
